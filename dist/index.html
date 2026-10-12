@@ -28,7 +28,15 @@
     #work .work-type{color:var(--accent)}
     #work .work-copy>p:not(.work-type){color:#54585e}
     #work .work-link{border-color:#c9c6be;background:#f6f3ec}
-    #work .work-link:hover{border-color:#17181a;background:#17181a;color:#fff}  </style>
+    #work .work-link:hover{border-color:#17181a;background:#17181a;color:#fff}
+    .mini-program-entry{display:flex;align-items:center;gap:18px;margin-top:2px;padding:14px;border:1px solid #dedbd3;border-radius:18px;background:#f6f3ec}
+    .mini-program-qr{flex:0 0 142px;width:142px;padding:6px;border:1px solid #dedbd3;border-radius:14px;background:#fff;transition:transform .2s,box-shadow .2s}
+    .mini-program-qr:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(23,24,26,.1)}
+    .mini-program-qr:focus-visible{outline:2px solid #2862f2;outline-offset:3px}
+    .mini-program-qr img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:9px}
+    .mini-program-meta{min-width:0}.mini-program-meta strong{display:block;margin-bottom:7px;font-size:15px}.mini-program-meta span{display:block;color:var(--muted);font-size:13px;line-height:1.65}
+    @media(max-width:500px){.mini-program-entry{gap:14px;padding:12px}.mini-program-qr{flex-basis:124px;width:124px}}
+  </style>
 </head>
 <body>
   <div class="announcement">
@@ -43,7 +51,7 @@
     <section id="work"><div class="shell"><div class="section-head reveal"><div><p class="kicker">作品与项目</p><h2>我正在做的事</h2></div><p>从 AI 服务到服装设计，再到咖啡配方小程序。它们看起来不同，但都来自同一件事：把一个想法做成可以被看见、被使用的东西。</p></div><div class="work-list">
       <article class="work reveal"><div class="work-copy"><p class="work-type">AI 服务</p><h3>雾San AI</h3><p>把常用 AI 服务整理成更容易购买的入口。稳定开通、清晰价格与售后支持，让 AI 真正成为生产力。</p><a class="work-link" href="https://www.16688.com.cn/shop/S165965" target="_blank" rel="noopener">访问 AI 会员网站 ↗</a></div><div class="work-media"><span class="status">正在运营</span><img src="assets/ai-shop.jpg" alt="雾San AI 服务介绍"></div></article>
       <article class="work reveal"><div class="work-copy"><p class="work-type">服装设计</p><h3>美式式街头华夫格旗帜印花长袖t恤</h3><p>英伦旗帜、旧化质感与数字编号被放进同一件华夫格长袖里。正反两面的细节共同组成完整视觉。</p><a class="work-link" href="#contact">在售中 · 联系购买</a></div><div class="work-media fashion-media"><span class="status">在售</span><img src="assets/fashion-front.jpg" alt="美式式街头华夫格旗帜印花长袖t恤正面"><img src="assets/fashion-back.jpg" alt="美式式街头华夫格旗帜印花长袖t恤背面"><span class="switch">悬停查看背面</span></div></article>
-      <article class="work reveal"><div class="work-copy"><p class="work-type">微信小程序</p><h3>雾San 的咖啡配方</h3><p>72 杯配方、搜索、学习与训练，把参数、风味和复习计划装进一个轻量的小程序，让经验可以记录，也可以复现。</p><span class="work-link">个人配方实验室</span></div><div class="work-media coffee-media"><span class="status">产品设计</span><div class="device one"><img src="assets/coffee-recipes.jpg" alt="咖啡配方列表页面"></div><div class="device two"><img src="assets/coffee-home.jpg" alt="咖啡配方小程序首页"></div></div></article>
+      <article class="work reveal"><div class="work-copy"><p class="work-type">微信小程序</p><h3>雾San 的咖啡配方</h3><p>72 杯配方、搜索、学习与训练，把参数、风味和复习计划装进一个轻量的小程序，让经验可以记录，也可以复现。</p><div class="mini-program-entry"><a class="mini-program-qr" href="assets/wusan-coffee-mini-program.jpg" target="_blank" rel="noopener" aria-label="查看雾San 的咖啡配方小程序码大图"><img src="assets/wusan-coffee-mini-program.jpg" alt="雾San 的咖啡配方微信小程序码"></a><div class="mini-program-meta"><strong>微信扫码进入</strong><span>打开微信扫一扫<br>即可体验小程序</span></div></div></div><div class="work-media coffee-media"><span class="status">可扫码体验</span><div class="device one"><img src="assets/coffee-recipes.jpg" alt="咖啡配方列表页面"></div><div class="device two"><img src="assets/coffee-home.jpg" alt="咖啡配方小程序首页"></div></div></article>
     </div></div></section>
     <section id="ideas" class="ideas"><div class="shell"><div class="section-head reveal"><div><p class="kicker">还在探索</p><h2>一些支线任务</h2></div><p>生活不必只有一条主线。暂时没有答案的兴趣，也可以先认真地做下去。</p></div><div class="idea-grid"><article class="idea reveal"><span>01</span><h3>AI 创作</h3><p>尝试新的模型、工作流和 Agent，把工具变成真正能工作的伙伴。</p></article><article class="idea reveal"><span>02</span><h3>内容与自媒体</h3><p>记录产品、技术和成长过程，让输出成为思考的一部分。</p></article><article class="idea reveal"><span>03</span><h3>阅读与生活</h3><p>收集那些值得反复想的观点，也保留对日常小事的好奇心。</p></article></div></div></section>
     <section id="contact" class="contact"><div class="shell"><div class="contact-box reveal"><div class="contact-top"><div><p class="kicker">联系方式</p><h2>在你常用的平台，<br>找到雾San。</h2></div><p>如果你也在做有意思的产品、生意或内容，欢迎来交换想法。下面所有名称都使用平台的标准写法，并保留了你的账号信息。</p></div><div class="social-grid">
